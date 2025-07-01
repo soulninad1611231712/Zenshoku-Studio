@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenshoku Studio</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Zenshoku Studio</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Future Meets Fashion</h1>
+      <p>Cyberpunk-inspired anime streetwear</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/img/shirt1.jpg" alt="T-Shirt 1">
+        <h3>Neo Tokyo Tee</h3>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/img/shirt2.jpg" alt="T-Shirt 2">
+        <h3>Cyberwave Hoodie</h3>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About the Brand</h2>
+    <p>Zenshoku Studio brings together cyberpunk energy and anime culture to redefine streetwear for the next generation. Designed in the neon glow of Tokyo nights.</p>
+  </section>
+
+  <section id="lookbook" class="lookbook">
+    <h2>Lookbook</h2>
+    <div class="filter-bar">
+      <button onclick="filterGallery('all')">All</button>
+      <button onclick="filterGallery('hoodies')">Hoodies</button>
+      <button onclick="filterGallery('tees')">Tees</button>
+    </div>
+    <div class="gallery">
+      <img src="assets/img/look1.jpg" data-category="tees" alt="Look 1">
+      <img src="assets/img/look2.jpg" data-category="hoodies" alt="Look 2">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Stay Connected</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="assets/img/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="assets/img/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="assets/img/tiktok.svg" alt="TikTok"></a>
+      <a href="#"><img src="assets/img/discord.svg" alt="Discord"></a>
+    </div>
+    <p>&copy; 2025 Zenshoku Studio</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
